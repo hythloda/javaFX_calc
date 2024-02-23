@@ -1,0 +1,5 @@
+Button {
+    -fx-font-family: sans-serif;
+	-fx-background-radius: 8px;
+	-fx-font-size: 15px;
+}

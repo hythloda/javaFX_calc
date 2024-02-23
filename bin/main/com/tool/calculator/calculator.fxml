@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="382.0" style="-fx-background-color: rgb(2,48,58);" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.tool.calculator.CalculatorController">
+   <Button layoutX="97.0" layoutY="214.0" mnemonicParsing="false" onAction="#pressing8Btn" prefHeight="51.0" prefWidth="53.0" text="8"/>
+   <Button layoutX="23.0" layoutY="214.0" mnemonicParsing="false" onAction="#pressing7Btn" prefHeight="51.0" prefWidth="53.0" text="7"/>
+   <Button layoutX="165.0" layoutY="214.0" mnemonicParsing="false" onAction="#pressing9Btn" prefHeight="51.0" prefWidth="53.0" text="9"/>
+   <Button layoutX="237.0" layoutY="214.0" mnemonicParsing="false" onAction="#clear" prefHeight="51.0" prefWidth="123.0" text="Cl"/>
+   <Button layoutX="23.0" layoutY="396.0" mnemonicParsing="false" onAction="#dot" prefHeight="51.0" prefWidth="53.0" text="."/>
+   <Button layoutX="97.0" layoutY="275.0" mnemonicParsing="false" onAction="#pressing5Btn" prefHeight="51.0" prefWidth="53.0" text="5"/>
+   <Button layoutX="23.0" layoutY="337.0" mnemonicParsing="false" onAction="#pressing1Btn" prefHeight="51.0" prefWidth="53.0" text="1"/>
+   <Button layoutX="23.0" layoutY="275.0" mnemonicParsing="false" onAction="#pressing4Btn" prefHeight="51.0" prefWidth="53.0" text="4"/>
+   <Button layoutX="165.0" layoutY="337.0" mnemonicParsing="false" onAction="#pressing3Btn" prefHeight="51.0" prefWidth="53.0" text="3"/>
+   <Button layoutX="165.0" layoutY="275.0" mnemonicParsing="false" onAction="#pressing6Btn" prefHeight="51.0" prefWidth="53.0" text="6"/>
+   <Button layoutX="97.0" layoutY="337.0" mnemonicParsing="false" onAction="#pressing2Btn" prefHeight="51.0" prefWidth="53.0" text="2"/>
+   <Button layoutX="237.0" layoutY="396.0" mnemonicParsing="false" onAction="#equal" prefHeight="51.0" prefWidth="123.0" text="="/>
+   <Button layoutX="307.0" layoutY="337.0" mnemonicParsing="false" onAction="#minus" prefHeight="51.0" prefWidth="53.0" text="-"/>
+   <Button layoutX="97.0" layoutY="396.0" mnemonicParsing="false" onAction="#pressing0Btn" prefHeight="51.0" prefWidth="53.0" text="0"/>
+   <Button layoutX="237.0" layoutY="337.0" mnemonicParsing="false" onAction="#add" prefHeight="51.0" prefWidth="53.0" text="+"/>
+   <Button layoutX="307.0" layoutY="275.0" mnemonicParsing="false" onAction="#divide" prefHeight="51.0" prefWidth="53.0" text="/"/>
+   <Button layoutX="237.0" layoutY="275.0" mnemonicParsing="false" onAction="#times" prefHeight="51.0" prefWidth="53.0" text="×"/>
+   <TextField fx:id="inputField" disable="true" editable="false" layoutX="20.0" layoutY="23.0" prefHeight="65.0" prefWidth="340.0" style="-fx-background-color: rgb(247,247,248); -fx-background-radius: 0;">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </TextField>
+   <TextField fx:id="outputField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="20.0" layoutY="88.0" prefHeight="100.0" prefWidth="340.0" style="-fx-background-color: rgb(247,247,248); -fx-background-radius: 0;">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </TextField>
+   <Label fx:id="equalLabel" alignment="CENTER" layoutX="21.0" layoutY="96.0" prefHeight="29.0" prefWidth="43.0" text="=" visible="false">
+      <font>
+         <Font size="22.0"/>
+      </font>
+   </Label>
+   <Button layoutX="165.0" layoutY="396.0" mnemonicParsing="false" onAction="#ansBtn" prefHeight="51.0" prefWidth="53.0" text="Ans"/>
+</Pane>
